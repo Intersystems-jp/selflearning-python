@@ -2,8 +2,14 @@
 
 このサンプルは、InterSystems IRIS の Python 用 NativeAPIの使用方法を確認できるサンプルと PyODBC で IRIS へのアクセス方法を確認できるサンプルコードを含んだ jupyter のコンテナと IRIS のコンテナを作成します。
 
+ビデオによる解説もご用意しています。詳しくは開発者コミュニティの以下記事をご参照ください。
+
+- [【はじめての InterSystems IRIS】セルフラーニングビデオ：アクセス編：Python の NativeAPI に挑戦](https://jp.community.intersystems.com/node/478611)
+
+- [【はじめての InterSystems IRIS】セルフラーニングビデオ：アクセス編：Python から PyODBC を使って IRIS に接続してみよう](https://jp.community.intersystems.com/node/478616)
+
 > Docker、docker-compose、git が利用できる環境でお試しください。
-またホストでサンプルを実行する場合は、Python3、pip のインストール、pyodbcの設定に必要な事前準備を行ってからお試しください（Linuxの場合は、 unixodbc-dev、odbcinst のインストール、Windowsの場合は、InterSystems IRISのODBCドライバのインストール）。
+またホストでサンプルを実行する場合は、Python3、pip のインストール、pyodbcの設定に必要な事前準備を行ってからお試しください（Linuxの場合は、 unixodbc のインストール、Windowsの場合は、InterSystems IRISのODBCドライバのインストール）。
 
 
 **イメージ図**
