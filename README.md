@@ -64,8 +64,7 @@ Jupyter のコンテナではなく、サンプルをダウンロードされた
 pyodbc モジュールのインポートのために以下のインストールが必要です。
 
 Linux:
-- unixodbc-dev
-- odbcinst
+- unixodbc
 
 Windows:
 - IRIS の ODBC ドライバ（[こちら](https://github.com/Intersystems-jp/IRISModules/raw/master/python/ODBC-2021.1.0.215.0-win_x64.exe)からダウンロードしてください。）
