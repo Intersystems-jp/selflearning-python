@@ -71,7 +71,13 @@ Windows:
 - IRIS の ODBC ドライバ（[こちら](https://github.com/Intersystems-jp/IRISModules/raw/master/python/ODBC-2021.1.0.215.0-win_x64.exe)からダウンロードしてください。）
 
 
-### (1) Linuxで実行する場合
+ホストで実行を試す際、IRISコンテナに接続する場合は、以下実行してください（既に開始している場合は不要です）。
+
+```
+docker-compose up -d iris
+```
+
+### A) Linuxで実行する場合
 
 以下の順序でサンプルコードが実行されます。
 
@@ -100,7 +106,7 @@ Windows:
     ./runhost.sh
     ```
 
-### (2) Windowsで実行する場合
+### B) Windowsで実行する場合
 
 以下の順序でサンプルコードが実行されます。
 
