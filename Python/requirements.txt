@@ -1,0 +1,5 @@
+jupyterthemes
+matplotlib
+pandas
+seaborn
+pyodbc

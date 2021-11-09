@@ -1,0 +1,34 @@
+version: '3.7'
+
+services:
+  iris:
+    build:
+      context: ./IRIS
+      dockerfile: Dockerfile
+    image: selflearning:iris
+    init: true
+    hostname: selflearning-iris
+    container_name: selflearning-iris
+    ports:
+      # webserver/management portal port
+      - "52779:52773"
+      # superserver default port
+      - "1972:1972"
+    environment:
+      TZ: JST-9
+
+  jupyter:
+    build:
+      context: ./Python
+      dockerfile: Dockerfile
+    image: selflearning:jupyter
+    init: true
+    hostname: selflearning-jupyter
+    container_name: selflearning-jupyter
+    environment:
+      - JUPYTER_ENABLE_LAB=yes
+      - TZ=JST-9
+    ports:
+      - "8896:8888"
+    volumes:
+      - ./Python/jupyter-sample:/ISC
